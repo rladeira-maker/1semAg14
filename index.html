@@ -2,18 +2,24 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <title>Atrativos Turísticos - São José dos Campos</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://meyerweb.com/eric/tools/css/reset/reset.css"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link
       rel="shortcut icon"
       href="https://www.sjc.sp.gov.br/img/favicon.ico"
     />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito"
-      rel="stylesheet"
-    />
-    <style>
+    <title>Atrativos Turísticos - São José dos Campos</title>
+    <style type="text/css">
       body {
         font-family: "Nunito", Arial, Helvetica, sans-serif;
         max-width: 1322px;
@@ -21,134 +27,144 @@
         padding: 1em;
         background-color: whitesmoke;
       }
-      img{
+      img {
         width: 100%;
-        height: 150px;
-        padding: 0em 1em 0em 1em;
+        padding: 22px 0px;
       }
-      footer img{
-        height: 100%;
+      h1 {
+        font-size: 40px;
+        font-weight: 700;
       }
-
-      #master_image img{
-        height: 100%;
+      h5 {
+        font-size: 20px;
+        font-weight: 700;
       }
-
-      header, footer {
-        margin: 0em 1em 8px 1em;
+      .container {
+        max-width: 1330px;
+        margin: 0 auto;
+        padding: 8px;
       }
-
-      .w3-card{
+      .secaoAtracoes {
+        padding-top: 8px;
+      }
+      .secaoAtracoes .atracoesLista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+      }
+      .secaoAtracoes .cardAtracao {
+        background-color: #fff;
+        width: 310px;
+        text-align: center;
+        padding: 22px 28px;
+        border: 2px solid #f5ebdc;
+        border-radius: 15px;
+        margin-bottom: 15px;
+        list-style-type: none;
+      }
+      .secaoAtracoes .cardAtracao img {
         width: 100%;
-        height: 36em;
-        padding: top:8px;
+        max-height: 160px;
+        padding: 8px 0px;
       }
 
+      .secaoAtracoes .cardAtracao p {
+        color: black;
+        font-size: 1em;
+        font-weight: normal;
+        margin-bottom: 28px;
+        text-align: justify;
+      }
     </style>
-    <script src=""></script>
   </head>
   <body>
-    <header
-      class="w3-container w3-center w3-dark-grey w3-round-xlarge"
-    >
+    <header class="w3-container w3-center w3-dark-grey w3-round-xlarge">
       <h1>Atrativos Turísticos de São José dos Campos</h1>
     </header>
-      <div id="master_image">
+    <div>
       <img
         class="w3-round-xxlarge"
         src="./Image/Anel_Viario.jpeg"
-        alt="Anel_Viario"  
+        alt="Anel_Viario"
       />
     </div>
-      <section>
-      <div class="w3-row-padding">
-        <div class="w3-quarter">
-          <div
-            class="w3-card w3-light-grey w3-center w3-hover-opacity w3-round-xlarge"
-          >
-            <h5 class="w3-round-xlarge w3-pale-yellow">Parque Alberto Simões</h5>
+    <section class="secaoAtracoes">
+      <div class="container">
+        <!-- LISTA DE ATRAÇÕES -->
+        <ul class="atracoesLista">
+          <li class="cardAtracao w3-hover-opacity">
+            <h5 class="w3-pale-yellow w3-round-xlarge">
+              Parque Alberto Simões
+              <p>&nbsp;</p>
+            </h5>
             <img
               src="./Image/Parque_Alberto_Simoes.png"
-              alt="Parque Alberto Simões"
-              
+              alt="Parque_Alberto_Simoes"
             />
-            <p class="w3-container w3-justify">
+            <p>
               Instalado em área remanescente da antiga Fazenda Boa Vista, o
               local possui equipamentos para a prática de esportes radicais
               (tirolesas, paredão de escalada e arborismo), pista para skate e
               BMX street, circuito de caminhada e playground.
             </p>
-            <p>&nbsp;</p>
-            <p class="w3-container w3-justify">
+            <p>
               <strong>Endereço:</strong> Av. Pico das Agulhas Negras, 112 -
               Altos de Santana
             </p>
-
             <p><strong>Contato:</strong> (12) 3922-3001</p>
-            <!-- espaços acrescidos somente para os cards ficarem em tamanhos próximos-->
-          </div>
-        </div>
-        <div class="w3-quarter">
-          <div
-            class="w3-card w3-light-grey w3-center w3-hover-opacity w3-round-xlarge"
-          >
-            <h5 class="w3-round-xlarge w3-pale-yellow">Parque Santos Dumont</h5>
+          </li>
+          <li class="cardAtracao w3-hover-opacity">
+            <h5 class="w3-round-xlarge w3-pale-yellow">
+              Parque Santos Dumont
+              <p>&nbsp;</p>
+            </h5>
             <img
               src="./Image/Parque_Santos_Dumont.png"
               alt="Parque Santos Dumont"
-              
             />
-            <p class="w3-container w3-justify">
+            <p>
               Criado em 1970, um dos mais tradicionais da cidade, com
               playground, jardim japonês, quiosques e dois lagos com carpas e
               patos. No local encontra-se o Protótipo do avião Bandeirantes
               PP-ZDF, primeiro avião produzido pela Embraer, e 3 Foguetes Sonda,
               além de uma réplica do avião 14-Bis, projetado por Santos Dumont.
             </p>
-            <p class="w3-container w3-justify">
+            <p>
               <strong>Endereço:</strong> Rua Prudente Meireles de Moraes, 1000 -
               Vila Adyana
             </p>
             <p><strong>Contato:</strong> (12) 3921-7066</p>
-            <!-- espaços acrescidos somente para os cards ficarem em tamanhos próximos-->
-          </div>
-        </div>
-        <div class="w3-quarter">
-          <div
-            class="w3-card w3-light-grey w3-center w3-hover-opacity w3-round-xlarge"
-          >
-            <h5 class="w3-round-xlarge w3-pale-yellow">Parque Vicentina Aranha</h5>
+          </li>
+          <li class="cardAtracao w3-hover-opacity">
+            <h5 class="w3-round-xlarge w3-pale-yellow">
+              Parque Vicentina Aranha
+              <p>&nbsp;</p>
+            </h5>
             <img
               src="./Image/Parque_Vicentina_Aranha.png"
               alt="Parque Vicentina Aranha"
-              
             />
-            <p class="w3-container w3-justify">
+            <p>
               Patrimônio histórico tombado pelo COMPHAC e Condephaat. Ocupa uma
               área de 84.500 m², com 80% de área verde e pistas de caminhada,
               além de pavilhões projetados pelo arquiteto Ramos de Azevedo.
             </p>
-            <p>&nbsp;</p>
-            <p class="w3-container w3-justify">
+            <p>
               <strong>Endereço:</strong> Rua Engenheiro Prudente Meireles de
               Moraes, 302 - Vila Adyana
             </p>
-            <p>&nbsp;</p>
             <p><strong>Contato:</strong> (12) 3921-7090</p>
-            <!-- espaços acrescidos somente para os cards ficarem em tamanhos próximos-->
-          </div>
-        </div>
-        <div class="w3-quarter">
-          <div
-            class="w3-card w3-light-grey w3-center w3-hover-opacity w3-round-xlarge"
-          >
-            <h6 class="w3-round-xlarge w3-pale-yellow">Parque da Cidade Roberto Burle Marx</h6>
+          </li>
+          <li class="cardAtracao w3-hover-opacity">
+            <h5 class="w3-round-xlarge w3-pale-yellow">
+              Parque da Cidade Roberto Burle Marx
+            </h5>
             <img
               src="./Image/Parque_Parque_da_Cidade.png"
-              alt="LA"
-              
+              alt="Parque_da_Cidade"
             />
-            <p class="w3-container w3-justify">
+            <p>
               O Parque abriga diversas espécies da flora e fauna silvestre,
               como: capivaras, macacos, esquilos e garças, que desfilam ao redor
               dos lagos, borboletário, Museu do Folclore e de maravilhosos
@@ -156,109 +172,79 @@
               também é composta pelo Complexo Residencial, projetado pelo
               renomado arquiteto Rino Levi.
             </p>
-            <p class="w3-container w3-justify">
-              <strong>Endereço:</strong> Av. Olivo Gomes, 100 - Santana
-            </p>
+            <p><strong>Endereço:</strong> Av. Olivo Gomes, 100 - Santana</p>
             <p><strong>Contato:</strong> (12) 3921-9382</p>
-          </div>
-        </div>
-      </div>
-      <div class="w3-row-padding">
-        <div class="w3-quarter">
-          <div
-            class="w3-card w3-light-grey w3-center w3-hover-opacity w3-round-xlarge"
-          >
-            <h5 class="w3-round-xlarge w3-pale-yellow">MAB Museu Aeroespacial Brasileiro</h5>
+          </li>
+          <li class="cardAtracao w3-hover-opacity">
+            <h5 class="w3-round-xlarge w3-pale-yellow">
+              MAB Museu Aeroespacial Brasileiro
+            </h5>
             <img
               src="./Image/Museu_Aeroespacial.png"
               alt="Museu Aeroespacial"
-              
             />
-            <p class="w3-container w3-justify">
+            <p>
               Acervo das cinco décadas de conquistas do DCTA - Departamento de
               Ciência e Tecnologia Aeroespacial e do ITA - Instituto Tecnológico
               de Aeronáutica.
             </p>
-            <p>&nbsp;</p>
-            <p class="w3-container w3-justify">
+            <p>
               <strong>Endereço:</strong> Av. Brigadeiro Faria Lima, s/n (acesso
               para o Aeroporto)
             </p>
-            <p>&nbsp;</p>
             <p><strong>Contato:</strong> (12) 3947-3046</p>
-          </div>
-        </div>
-        <div class="w3-quarter">
-          <div
-            class="w3-card w3-light-grey w3-center w3-hover-opacity w3-round-xlarge"
-          >
-            <h5 class="w3-round-xlarge w3-pale-yellow">MIC Museu Interativo de Ciências</h5>
-            <img
-              src="./Image/Museu_Interativo_de_Ciencias.png"
-              alt="Museu_Interativo_de_Ciencias"
-              
-            />
-            <p class="w3-container w3-justify">
-              Exposições e apresentações relacionadas à física, eletricidade,
-              biologia, mecânica, fluídos e astronomia.
-            </p>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
-            <p class="w3-container w3-justify">
-              <strong>Endereço:</strong> Rua Profº Felício Savastano, s/n - Vila
-              Industrial
-            </p>
-            <p>&nbsp;</p>
-            <p><strong>Contato:</strong> (12) 3922-0004</p>
-            <!-- espaços acrescidos somente para os cards ficarem em tamanhos próximos-->
-          </div>
-        </div>
-        <div class="w3-quarter">
-          <div
-            class="w3-card w3-light-grey w3-center w3-hover-opacity w3-round-xlarge"
-          >
-            <h5 class="w3-round-xlarge w3-pale-yellow">Mercado Municipal</h5>
-            <img src="./Image/Mercado_Municipal.png" alt="Mercado_Municipal"
-            titleado_Municipal"  />
-            <p class="w3-container w3-justify">
+          </li>
+          <li class="cardAtracao w3-hover-opacity">
+            <h5 class="w3-round-xlarge w3-pale-yellow">
+              Mercado Municipal
+              <p>&nbsp;</p>
+            </h5>
+            <img src="./Image/Mercado_Municipal.png" alt="Mercado_Municipal" />
+            <p>
               Desde 1923, é uma ótima opção para passear e aproveitar a
               variedade de produtos e culinária local. Experimente o “Bolinho
               Caipira”, iguaria tipicamente do Vale do Paraíba.
             </p>
-            <p>&nbsp;</p>
-            <p class="w3-container w3-justify">
-              <strong>Endereço:</strong> Travessa Chico Luiz, 56 - Centro
-            </p>
-            <p>&nbsp;</p>
+            <p><strong>Endereço:</strong> Travessa Chico Luiz, 56 - Centro</p>
             <p><strong>Contato:</strong> (12) 3922-4292</p>
-            <!-- espaços acrescidos somente para os cards ficarem em tamanhos próximos-->
-          </div>
-        </div>
-        <div class="w3-quarter">
-          <div
-            class="w3-card w3-light-grey w3-center w3-hover-opacity w3-round-xlarge"
-          >
+          </li>
+          <li class="cardAtracao w3-hover-opacity">
+            <h5 class="w3-round-xlarge w3-pale-yellow">
+              MIC Museu Interativo de Ciências
+            </h5>
+            <img
+              src="./Image/Museu_Interativo_de_Ciencias.png"
+              alt="Museu_Interativo_de_Ciencias"
+            />
+            <p>
+              Exposições e apresentações relacionadas à física, eletricidade,
+              biologia, mecânica, fluídos e astronomia.
+            </p>
+            <p>
+              <strong>Endereço:</strong> Rua Profº Felício Savastano, s/n - Vila
+              Industrial
+            </p>
+            <p><strong>Contato:</strong> (12) 3922-0004</p>
+          </li>
+          <li class="cardAtracao w3-hover-opacity">
             <h5 class="w3-round-xlarge w3-pale-yellow">Parque Tecnológico</h5>
             <img
               src="./Image/Parque_Tecnologico.png"
               alt="Parque_Tecnologico"
-              
             />
-            <p class="w3-container w3-justify">
+            <p>
               O Parque de Inovação Tecnológica São José dos Campos é um ambiente
               que promove ciência, tecnologia, inovação e empreendedorismo,
               sempre em busca do desenvolvimento das empresas e instituições
               vinculadas.
             </p>
-            <p>&nbsp;</p>
-            <p class="w3-container w3-justify">
+            <p>
               <strong>Endereço:</strong> Av. Doutor Altino Bondesan, 500 -
               Eugênio de Melo
             </p>
-            <p>&nbsp;</p>
             <p><strong>Contato:</strong> (12) 3878-9500</p>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
     <footer class="w3-panel w3-dark-grey w3-row w3-round-xlarge">
